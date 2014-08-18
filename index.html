@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>jQuery Mobile Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/font/roboto-regular.css" />
+
+    <!-- jQueryMobileCSS - original with styling -->
+    <!-- <link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" /> -->
+
+    <!-- jQueryMobileCSS - original without styling -->
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.1.min.css" />
+
+    <!-- Custom styling including overrides to the jQueryMobile structure CSS -->
+    <link href="css/eats.css" rel="stylesheet">
+
+    <!-- jQuery and jQueryMobile libraries -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.mobile-1.3.1.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <section id="page-main" data-role="page">
+        <header id="header-mylist" data-role="header" data-position="fixed" data-theme="a">
+            <!-- <a id="btn-new" data-role="button" data-icon="plus" data-iconpos="right" data-inline="true" href="#page-add" class="ui-btn-right">New</a> -->
+            <h1>Eats!</h1>
+        </header>
+        <!-- /header -->
+        <article data-role="content" id="contentlist">
+            <ul data-role="listview" id="restaurantList" class="myList">
+                <li><a href="#page-add">My first item</a>
+                </li>
+                <li><a href="#page-add">Another item</a>
+                </li>
+                <li><a href="#page-add">A third thing</a>
+                </li>
+            </ul>
+        </article>
+        <!-- /content -->
+        <!-- <footer data-role="footer" data-position="fixed" id="app-nav">
+            <div data-role="navbar" data-iconpos="top" data-theme="c">
+                <ul>
+                    <li>
+                        <a id="btn-load-mylist" href="#page-main" data-transition="fade" data-theme="c" data-icon="edit">
+                      My List
+                  </a>
+                    </li>
+                    <li>
+                        <a id="btn-load-inspiration" href="#page-main" data-transition="fade" data-theme="c" data-icon="list">
+                      Inspiration
+                  </a>
+                    </li>
+                </ul>
+            </div>
+        </footer> -->
+        <!-- /footer -->
+    </section>
+    <section id="page-detail" data-role="page" data-add-back-btn="true">
+        <header id="header-mylist" data-role="header" data-position="fixed" data-theme="a">
+
+            <h1>Eats!</h1>
+        </header>
+        <!-- /header -->
+        <div id="detail-box">
+            <h3 id="detail-name"></h3>
+            <span class="b block">Address:</span>
+            <p id="detail-address"> 
+            </p>
+            <span class="b block">Rating:</span>
+            <p id="detail-rating">  
+            </p>
+            <div id="detail-map"></div>
+            <p class="btn-wrapper"><a id="btn-new" class="button" data-role="button" data-icon="plus" data-iconpos="right" data-inline="true" href="#page-add" class="ui-btn-right">Write a Review</a></p>
+            <div id="detail-review">
+                <ul id="detail-review-list">
+                    
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <section id="page-add" data-role="page" data-add-back-btn="true">
+        <header data-role="header" data-theme="a">
+            <h1>Add Item</h1>
+        </header>
+        <!-- /header -->
+        <article data-role="content">
+            <form action="" id="form-add-item" class="" style="">
+                <label for="form-title">Restaurant Name:</label>
+                <input id="form-title" type="text" placeholder="I am going to..." />
+                <label for="form-place">Location:</label>
+                <input id="form-place" type="text" placeholder="Somewhere in the world..." />
+                <label for="form-rating">Ratingrating:</label>
+                <input id="form-rating" type="text" placeholder="Rating on a scale of 1-5" />
+                <label for="form-desc">Review:</label>
+                <textarea name="" id="form-desc" placeholder="Add any additional information here..."></textarea>
+                <input id="form-uuid" type="hidden" />
+                <a id="btn-cancel" data-role="button" data-icon="delete" href="#page-main">Cancel</a>
+                <a id="btn-submit" data-role="button" data-icon="plus" href="#page-main">Submit</a>
+            </form>
+        </article>
+        <!-- /content -->
+    </section>
+</body>
+
+</html>
