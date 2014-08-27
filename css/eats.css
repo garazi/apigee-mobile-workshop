@@ -13,6 +13,36 @@
     border: 1px solid rgb(255, 67, 0);
     border-radius: 20px;
 }
+#detail-review-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+#detail-review-list h4, #detail-review-list p {
+    padding: 0;
+    margin: 0 0 6px 0;
+}
+#detail-review-list h4 {
+    margin-top: 12px;
+}
+#detail-rating {
+    display: inline-block;
+    padding-bottom: 18px;
+}
+.stars {
+    display: block;
+    float: right;
+    margin: 0 18px;
+}
+.star-rating {
+    height: 16px;
+    background-image: url('star.png');
+    background-repeat: repeat-x;
+    width: 20px;
+    display: inline-block;
+}
 body {
     color: black;
     font-family: sans-serif;

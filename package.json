@@ -16,7 +16,8 @@
         "volos-mailer": "x.x.x",
         "avault": "",
         "request": "x.x.x",
-        "async": "x.x.x"
+        "async": "x.x.x",
+        "jade": "*"
     },
     "api": {
         "name": "Eats",

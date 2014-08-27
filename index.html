@@ -66,16 +66,15 @@
     </section>
     <section id="page-detail" data-role="page" data-add-back-btn="true">
         <header id="header-mylist" data-role="header" data-position="fixed" data-theme="a">
-
             <h1>Eats!</h1>
         </header>
         <!-- /header -->
         <div id="detail-box">
-            <h3 id="detail-name"></h3>
+            <h3 id="detail-name" data-restID=""></h3>
             <span class="b block">Address:</span>
             <p id="detail-address"> 
             </p>
-            <span class="b block">Rating:</span>
+            <span class="b">Rating:</span>
             <p id="detail-rating">  
             </p>
             <div id="detail-map"></div>
@@ -95,11 +94,11 @@
         <!-- /header -->
         <article data-role="content">
             <form action="" id="form-add-item" class="" style="">
-                <label for="form-title">Restaurant Name:</label>
-                <input id="form-title" type="text" placeholder="I am going to..." />
-                <label for="form-place">Location:</label>
-                <input id="form-place" type="text" placeholder="Somewhere in the world..." />
-                <label for="form-rating">Ratingrating:</label>
+                <label for="form-title">Review Title:</label>
+                <input id="form-title" type="text" placeholder="Give your review a title" />
+                <label for="form-email">Your Email:</label>
+                <input id="form-email" type="text" placeholder="Please add your email" />
+                <label for="form-rating">Rating:</label>
                 <input id="form-rating" type="text" placeholder="Rating on a scale of 1-5" />
                 <label for="form-desc">Review:</label>
                 <textarea name="" id="form-desc" placeholder="Add any additional information here..."></textarea>
